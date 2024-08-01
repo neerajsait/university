@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroLink</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            overflow: hidden;
+        }
+        header {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            box-sizing: border-box;
+        }
+        .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo span {
+            color: #FFD700;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav-icons a {
+            color: #fff;
+            margin-left: 15px;
+            font-size: 16px;
+        }
+        .hero {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            animation: slide 20s infinite;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 24px;
+            margin: 10px 0 30px;
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .see-produce {
+            background: #FFD700;
+            color: #000;
+        }
+        .login {
+            background: #fff;
+            color: #000;
+        }
+        .get-started {
+            background: #FFD700;
+            color: #000;
+        }
+        .learn-more {
+            background: #fff;
+            color: #000;
+        }
+        @keyframes slide {
+            0%, 10% { background-image: url('https://wallpapercave.com/wp/wp1886383.jpg'); }
+            10.01%, 20% { background-image: url('https://wallpapercave.com/wp/wp1886383.jpg'); }
+            20.01%, 30% { background-image: url('https://wallpapercave.com/wp/wp1886383.jpg'); }
+            30.01%, 40% { background-image: url('https://wallpapercave.com/wp/wp1886383.jpg'); }
+            40.01%, 50% { background-image: url('https://wallpapercave.com/wp/wp1886383.jpg'); }
+            50.01%, 60% { background-image: url('https://wallpapercave.com/wp/wp1886383.jpg'); }
+            60.01%, 70% { background-image: url('https://wallpapercave.com/wp/wp1886384.jpg'); }
+            70.01%, 80% { background-image: url('https://wallpapercave.com/wp/wp1886394.jpg'); }
+            80.01%, 90% { background-image: url('https://wallpapercave.com/wp/wp1886394.jpg'); }
+            90.01%, 100% { background-image: url('https://wallpapercave.com/wp/wp1886394.jpg'); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Agro<span>Link</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to AgroLink</h1>
+            <p>Connecting farmers with global markets and empowering rural youth through technology.</p>
+            <div class="buttons">
+                <button class="see-produce">See Our Produce <i class="fa fa-arrow-right"></i></button>
+                <button class="login">Login</button>
+            </div>
+            <button class="get-started">Get Started</button>
+            <button class="learn-more">Learn More</button>
+        </div>
+    </div>
+</body>
+</html>
